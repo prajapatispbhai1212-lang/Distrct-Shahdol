@@ -1,0 +1,233 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>District Shahdol</title>
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #fff;
+}
+
+.header {
+    height: 75px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 16%;
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.logo span {
+    color: #333;
+}
+
+.navbar {
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    border-bottom: 1px solid #ddd;
+    flex-wrap: wrap;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #222;
+    padding: 15px 12px;
+    font-size: 13px;
+}
+
+.navbar a:hover,
+.navbar .active {
+    background: #805600;
+    color: white;
+}
+
+.hero {
+    height: 270px;
+    background:
+        linear-gradient(transparent, rgba(0,0,0,.15)),
+        url('hero.jpg') center/cover no-repeat;
+    position: relative;
+}
+
+.hero-title {
+    position: absolute;
+    bottom: 5px;
+    left: 14%;
+    background: rgba(0,0,0,.65);
+    color: white;
+    padding: 15px 25px;
+    font-weight: bold;
+}
+
+.slider-controls {
+    position: absolute;
+    bottom: 15px;
+    right: 16%;
+}
+
+.slider-controls button {
+    padding: 7px 12px;
+    border: none;
+    cursor: pointer;
+    margin-left: 3px;
+}
+
+.news {
+    display: flex;
+    max-width: 850px;
+    margin: 18px auto 30px;
+    background: #fff0cf;
+    align-items: center;
+    min-height: 38px;
+}
+
+.news-title {
+    background: #704900;
+    color: white;
+    padding: 11px 25px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+
+.news-content {
+    padding: 10px;
+    font-size: 12px;
+    flex: 1;
+}
+
+.quick-links {
+    max-width: 850px;
+    margin: 0 auto;
+    background: #d8a63e;
+    padding: 0 10px 10px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 12px;
+}
+
+.quick-card {
+    background: white;
+    padding: 22px 10px;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0 2px 8px #ccc;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .3s;
+}
+
+.quick-card:hover {
+    background: #805600;
+    color: white;
+    transform: translateY(-3px);
+}
+
+@media(max-width: 700px) {
+    .header {
+        padding: 15px;
+    }
+
+    .navbar {
+        justify-content: flex-start;
+    }
+
+    .navbar a {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .hero {
+        height: 220px;
+    }
+
+    .news {
+        margin: 15px;
+    }
+
+    .quick-links {
+        grid-template-columns: repeat(2, 1fr);
+        margin: 15px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="logo">🏛️ District Shahdol</div>
+    <div>भारत सरकार | Government</div>
+</header>
+
+<nav class="navbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">About District</a>
+    <a href="#">Directory</a>
+    <a href="#">Contact Revenue Officials</a>
+    <a href="#">Covid19 Help Numbers</a>
+    <a href="#">Departments</a>
+    <a href="#">Tourism</a>
+    <a href="#">Forms</a>
+    <a href="#">Documents</a>
+    <a href="#">☰</a>
+</nav>
+
+<section class="hero">
+    <div class="hero-title">कलेक्ट्रेट शहडोल</div>
+
+    <div class="slider-controls">
+        <button>❮</button>
+        <button>Ⅱ</button>
+        <button>❯</button>
+    </div>
+</section>
+
+<section class="news">
+    <div class="news-title">Latest News</div>
+    <div class="news-content">
+        Sanjay National Park and Sanjay Dubri Wildlife Sanctuary
+        volume-2 zonal master plan
+    </div>
+</section>
+
+<section class="quick-links">
+
+    <div class="quick-card">E-office</div>
+
+    <div class="quick-card">
+        Telephone<br>Directory
+    </div>
+
+    <div class="quick-card">
+        Tourist Places
+    </div>
+
+    <div class="quick-card">
+        CEO Madhya<br>Paresh
+    </div>
+
+    <div class="quick-card">
+        Election<br>Commissioner
+    </div>
+
+</section>
+
+</body>
+</html>
